@@ -1,0 +1,23 @@
+{
+  "name": "standalone-service",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Account services for Alexandrite clients: config, secret, skill and memory sync, web search and fetch, headless browsers, Lattice graph storage and memory-model calls",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "node src/standalone/main.ts",
+    "test": "node --test test/",
+    "check": "tsc --noEmit -p . && tsc --noEmit -p test"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,4 @@
+[submodule "search"]
+	path = search
+	url = https://github.com/Pleochroic-Ltd/pleochroic-search.git
+	branch = pleochroic
